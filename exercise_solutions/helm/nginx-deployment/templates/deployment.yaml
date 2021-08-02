@@ -28,4 +28,4 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: nginx-alpine
         resources:
-{{ toYaml Values.resource | indent 12 }}
+{{ toYaml .Values.resource | indent 12 }}
